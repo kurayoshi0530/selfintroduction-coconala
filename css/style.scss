@@ -272,6 +272,22 @@ body {
         padding: 0;
     }
     // ----- story-important要素を線で囲む ここまで -----
+
+    .portfolio {
+        .portfolio-text {
+            border: 2px solid #000;
+            margin: 150px 0 50px 0;
+            h3 {
+                margin: 5px;
+            }
+        }
+
+        .portfolio-image img {
+            width: 80%;
+            height: auto;
+            padding-bottom: 50px;
+        }
+    }
 }
 
 .contact {

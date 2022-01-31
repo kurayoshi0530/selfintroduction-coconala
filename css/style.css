@@ -17,10 +17,9 @@ body .heading {
 body .heading h2 {
   position: relative;
   padding: 0.3em 0.5em;
-  background: -webkit-gradient(linear, left bottom, left top, from(#89b8ff), to(#c5ceff));
   background: linear-gradient(to top, #89b8ff, #c5ceff);
   color: #495193;
-  border-radius: px;
+  border-radius: 15px;
 }
 
 /*
@@ -41,7 +40,6 @@ body .heading h2 {
   color: #fff;
   background: gray;
   z-index: 100;
-  -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   position: fixed;
 }
@@ -77,7 +75,6 @@ body .heading h2 {
   background: rgba(255, 255, 255, 0.85);
   overflow: scroll;
   z-index: 1;
-  -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
   /* メニューを0.5秒かけて表示(フェードイン) */
   opacity: 0;
@@ -92,8 +89,7 @@ body .heading h2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .sp-menu-list {
@@ -139,16 +135,11 @@ body .heading h2 {
   margin-top: 30px;
 }
 .about .supported-language ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   list-style: none;
   padding-left: 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
 }
 .about .supported-language ul li {
@@ -188,23 +179,17 @@ body .heading h2 {
   border-radius: 20px;
   margin: 30px 20px;
   padding: 50px 20px;
-  -webkit-transform: translateX(-50px);
   transform: translateX(-50px);
   /* 最初は元の位置より左にずらしておく */
   opacity: 0;
   /* 最初は非表示にしておく */
-  -webkit-transition: opacity 1s, -webkit-transform 0.5s;
-  transition: opacity 1s, -webkit-transform 0.5s;
   transition: opacity 1s, transform 0.5s;
-  transition: opacity 1s, transform 0.5s, -webkit-transform 0.5s;
 }
 .service .fadein {
   opacity: 1;
   /* 表示させる */
-  -webkit-transform: translateX(0);
   transform: translateX(0);
   /* 位置を最初の位置に戻す */
-  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
   /* フェードイン速度の調整 */
 }
@@ -216,29 +201,22 @@ body .heading h2 {
   /* 条件を満たしたあとに追加するクラス */
 }
 .works #works-image img {
-  -webkit-box-shadow: 15px 15px 20px #717271;
-          box-shadow: 15px 15px 20px #717271;
+  box-shadow: 15px 15px 20px #717271;
   margin-bottom: 30px;
 }
 .works #works-image .work-img {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
+  transform: translateX(-50px);
   /* 最初は元の位置より左にずらしておく */
   opacity: 0;
   /* 最初は非表示にしておく */
-  -webkit-transition: opacity 1s, -webkit-transform 0.5s;
-  transition: opacity 1s, -webkit-transform 0.5s;
   transition: opacity 1s, transform 0.5s;
-  transition: opacity 1s, transform 0.5s, -webkit-transform 0.5s;
   /* 透明度と位置を設定 */
 }
 .works #works-image .fadein {
   opacity: 1;
   /* 表示させる */
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
   /* 位置を最初の位置に戻す */
-  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
   /* フェードイン速度の調整 */
 }
@@ -246,8 +224,7 @@ body .heading h2 {
   color: #5d627b;
   background: white;
   border-top: solid 5px #5d627b;
-  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
   margin-top: 50px;
 }
 .works .story-important {
@@ -278,6 +255,18 @@ body .heading h2 {
 .works .story-important p {
   margin: 0;
   padding: 0;
+}
+.works .portfolio .portfolio-text {
+  border: 2px solid #000;
+  margin: 150px 0 50px 0;
+}
+.works .portfolio .portfolio-text h3 {
+  margin: 5px;
+}
+.works .portfolio .portfolio-image img {
+  width: 80%;
+  height: auto;
+  padding-bottom: 50px;
 }
 
 .contact {
